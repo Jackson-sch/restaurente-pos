@@ -10,9 +10,9 @@ import Callout from "../../components/docs/Callout.astro";
       <span
         class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600"
         >RestaurantePOS</span
-      > es una solución integral diseñada para modernizar la gestión gastronómica
-      en Perú. Combina potencia, simplicidad y cumplimiento normativo en una sola
-      plataforma.
+      > es el sistema operativo gastronómico definitivo para el mercado peruano. Diseñado
+      para escalar desde el food truck de barrio hasta la cadena de franquicias, sin
+      la deuda técnica del software legado.
     </p>
 
     <!-- Tech Stack Badges -->
@@ -80,11 +80,11 @@ import Callout from "../../components/docs/Callout.astro";
         <h3
           class="text-xl font-bold text-white mb-2 group-hover:text-primary-400 transition-colors"
         >
-          Instalar Ahora
+          Inicio Rápido
         </h3>
         <p class="text-sm text-slate-400 leading-relaxed max-w-[80%]">
-          Despliega el sistema en menos de 5 minutos en tu servidor local o
-          nube.
+          Instala el sistema en local con un solo comando. Listo para
+          producción.
         </p>
       </div>
     </a>
@@ -133,28 +133,31 @@ import Callout from "../../components/docs/Callout.astro";
         <h3
           class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors"
         >
-          Explorar Módulos
+          Tour del Sistema
         </h3>
         <p class="text-sm text-slate-400 leading-relaxed max-w-[80%]">
-          Descubre todas las funcionalidades que ofrecemos para tu negocio.
+          Desde la toma de pedidos hasta el cierre de caja y facturación
+          electrónica.
         </p>
       </div>
     </a>
   </div>
 
-  <h2>¿Por qué RestaurantePOS?</h2>
+  <h2>Misión del Proyecto</h2>
 
   <p>
-    A diferencia de otros sistemas, nos enfocamos en la velocidad operativa y la
-    estabilidad offline. Sabemos que en hora punta no puedes permitirte fallos.
+    La mayoría del software para restaurantes en LATAM es antiguo, lento y
+    difícil de mantener. RestaurantePOS nació para cambiar eso, ofreciendo una
+    experiencia de desarrollador (DX) superior sin sacrificar la robustez
+    operativa.
   </p>
 
-  <Callout type="tip" title="Arquitectura Moderna">
-    Gracias a <strong>Next.js 16</strong> y <strong>Rust</strong> (vía Prisma/Bun),
-    el sistema es extremadamente rápido y eficiente en recursos.
+  <Callout type="tip" title="Performance First">
+    Construido sobre <strong>Next.js 16</strong> y <strong>Rust</strong>,
+    eliminamos los tiempos de carga. Cada milisegundo cuenta en hora punta.
   </Callout>
 
-  <h2 class="mb-8">Características Principales</h2>
+  <h2 class="mb-8">Pilares de Diseño</h2>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose mb-12">
     <!-- Feature 1 -->
@@ -173,10 +176,11 @@ import Callout from "../../components/docs/Callout.astro";
             ><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg
           >
         </div>
-        <h4 class="font-bold text-white text-sm">Gestión de Pedidos</h4>
+        <h4 class="font-bold text-white text-sm">Velocidad Extrema</h4>
       </div>
       <p class="text-xs text-slate-400 leading-relaxed">
-        Flujo optimizado para reducir clics en toma de orden.
+        Cada interacción está optimizada para reducir la fricción en el
+        servicio.
       </p>
     </div>
 
@@ -198,10 +202,11 @@ import Callout from "../../components/docs/Callout.astro";
             ></path></svg
           >
         </div>
-        <h4 class="font-bold text-white text-sm">Cocina Real-Time</h4>
+        <h4 class="font-bold text-white text-sm">UX Intuitiva</h4>
       </div>
       <p class="text-xs text-slate-400 leading-relaxed">
-        KDS con cero latencia para comandas instantáneas.
+        Curva de aprendizaje de minutos, no semanas. Ideal para alta rotación de
+        personal.
       </p>
     </div>
 
@@ -226,10 +231,10 @@ import Callout from "../../components/docs/Callout.astro";
               y2="6.5"></line></svg
           >
         </div>
-        <h4 class="font-bold text-white text-sm">Offline First</h4>
+        <h4 class="font-bold text-white text-sm">Resiliencia Offline</h4>
       </div>
       <p class="text-xs text-slate-400 leading-relaxed">
-        Sincronización automática cuando vuelve internet.
+        El sistema sigue facturando y comandando aunque se caiga internet.
       </p>
     </div>
 
@@ -253,16 +258,17 @@ import Callout from "../../components/docs/Callout.astro";
             ></path></svg
           >
         </div>
-        <h4 class="font-bold text-white text-sm">Facturación SUNAT</h4>
+        <h4 class="font-bold text-white text-sm">Normativa Peruana</h4>
       </div>
       <p class="text-xs text-slate-400 leading-relaxed">
-        Envío directo a SUNAT/OSE con validación.
+        Preparado para SUNAT, Boletas/Facturas electrónicas y monedas locales
+        (PEN).
       </p>
     </div>
   </div>
 
   <Callout type="warning" title="Uso Comercial">
     Este software es propietario. Asegúrate de tener una licencia activa antes
-    de usarlo en producción.
+    de usarlo en producción real.
   </Callout>
 </DocsLayout>
