@@ -1,0 +1,108 @@
+---
+const benefits = [
+  {
+    stat: "-40%",
+    label: "Tiempo de espera",
+    description: "Pedidos llegan más rápido a la cocina",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`
+  },
+  {
+    stat: "+25%",
+    label: "Productividad",
+    description: "Personal más eficiente con menos errores",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/></svg>`
+  },
+  {
+    stat: "-30%",
+    label: "Pérdida de inventario",
+    description: "Control preciso de ingredientes y recetas",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/></svg>`
+  },
+  {
+    stat: "100%",
+    label: "Compliance SUNAT",
+    description: "Facturación electrónica integrada",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>`
+  }
+];
+
+const checkmarks = [
+  "Actualizaciones automáticas sin costo adicional",
+  "Soporte técnico 24/7 vía WhatsApp",
+  "Capacitación inicial incluida",
+  "Migración de datos asistida",
+  "Sin contratos de permanencia",
+  "Backups diarios automáticos"
+];
+---
+
+<section id="beneficios" class="section-padding relative overflow-hidden">
+  <!-- Background accents -->
+  <div class="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-primary-500/5 to-transparent"></div>
+  
+  <div class="container-custom relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-medium text-secondary-400 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/></svg>
+        Resultados comprobados
+      </span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+        <span class="text-white">Beneficios </span>
+        <span class="gradient-text">Reales</span>
+      </h2>
+      <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+        Nuestros clientes experimentan mejoras significativas 
+        desde el primer mes de implementación.
+      </p>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      {benefits.map((benefit, index) => (
+        <div class={`glass-card p-6 text-center group hover:border-secondary-500/50 transition-all duration-300 opacity-0 animate-slide-up stagger-${index + 1}`}>
+          <div class="w-16 h-16 mx-auto rounded-2xl bg-secondary-500/20 flex items-center justify-center text-secondary-400 mb-4 group-hover:scale-110 transition-transform">
+            <Fragment set:html={benefit.icon} />
+          </div>
+          <div class="text-4xl font-bold gradient-text mb-1">{benefit.stat}</div>
+          <div class="text-white font-medium mb-2">{benefit.label}</div>
+          <div class="text-sm text-slate-400">{benefit.description}</div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Checklist -->
+    <div class="glass-card p-8 lg:p-12">
+      <div class="grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
+            Todo incluido en tu suscripción
+          </h3>
+          <p class="text-slate-400 mb-6">
+            Sin sorpresas ni costos ocultos. 
+            Obtén el sistema completo con todas las herramientas que necesitas.
+          </p>
+          <a 
+            href="https://wa.me/57934835062?text=Hola%2C%20quiero%20más%20información%20sobre%20RestaurantePOS"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary inline-flex items-center gap-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Contáctanos
+          </a>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {checkmarks.map((item, index) => (
+            <div class={`flex items-center gap-3 opacity-0 animate-slide-up stagger-${(index % 6) + 1}`}>
+              <div class="w-6 h-6 rounded-full bg-secondary-500/20 flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-secondary-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-sm text-slate-300">{item}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
