@@ -1,0 +1,313 @@
+---
+import DocsLayout from "../../layouts/DocsLayout.astro";
+import Callout from "../../components/docs/Callout.astro";
+---
+
+<DocsLayout title="Configuración - Documentación">
+  <h1>Configuración Inicial</h1>
+
+  <p class="lead">
+    Personaliza el sistema para adaptarlo a la identidad y operativa de tu
+    restaurante.
+  </p>
+
+  <h2 class="mb-6">Acceso Administrativo</h2>
+
+  <p class="mb-8">
+    Una vez instalado, el sistema genera credenciales por defecto para el primer
+    acceso.
+  </p>
+
+  <!-- Login Mockup -->
+  <div class="relative max-w-sm mx-auto my-12 not-prose group">
+    <!-- Glow Effect -->
+    <div
+      class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-blue-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"
+    >
+    </div>
+
+    <div
+      class="relative p-8 bg-[#0f172a] border border-white/10 rounded-xl shadow-2xl"
+    >
+      <div class="flex flex-col items-center mb-8">
+        <div
+          class="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-primary-500/20"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-white"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            ><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+            ></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg
+          >
+        </div>
+        <h3 class="text-white font-bold text-lg">RestaurantePOS</h3>
+        <p class="text-slate-500 text-xs">Iniciar Sesión</p>
+      </div>
+
+      <div class="space-y-4">
+        <div>
+          <label
+            class="block text-xs text-slate-400 mb-1.5 uppercase font-bold tracking-wider"
+            >Email</label
+          >
+          <div
+            class="flex items-center gap-3 px-4 py-3 bg-[#1e293b] rounded-lg border border-white/5 text-slate-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4 text-slate-500"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              ><rect width="20" height="16" x="2" y="4" rx="2"></rect><path
+                d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg
+            >
+            <span class="font-mono text-sm">admin@mirestaurante.com</span>
+          </div>
+        </div>
+        <div>
+          <label
+            class="block text-xs text-slate-400 mb-1.5 uppercase font-bold tracking-wider"
+            >Contraseña</label
+          >
+          <div
+            class="flex items-center gap-3 px-4 py-3 bg-[#1e293b] rounded-lg border border-white/5 text-slate-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4 text-slate-500"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              ><rect width="18" height="11" x="3" y="11" rx="2" ry="2"
+              ></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg
+            >
+            <span class="font-mono text-sm">admin123</span>
+          </div>
+        </div>
+        <button
+          class="w-full py-3 bg-primary-600 hover:bg-primary-500 text-white rounded-lg font-bold text-sm transition-all shadow-lg shadow-primary-500/20 mt-4"
+        >
+          Ingresar al Dashboard
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <Callout type="warning" title="Seguridad">
+    Cambia estas credenciales inmediatamente después del primer inicio de sesión
+    desde el perfil de usuario.
+  </Callout>
+
+  <h2 class="mb-4">Datos del Establecimiento</h2>
+
+  <p class="mb-8">
+    Navega a <code>Dashboard > Configuración</code> para editar la información que
+    aparecerá en tus comprobantes.
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose mb-12">
+    <!-- Item 1 -->
+    <div
+      class="flex items-start gap-4 p-4 rounded-xl border border-white/5 bg-[#1e293b]/30"
+    >
+      <div class="p-2 rounded-lg bg-blue-500/10 text-blue-400 mt-1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          ><path
+            d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"
+          ></path><path
+            d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"
+          ></path></svg
+        >
+      </div>
+      <div>
+        <h4 class="font-bold text-white text-sm">Razón Social</h4>
+        <p class="text-xs text-slate-400">
+          Nombre legal que aparecerá en facturas.
+        </p>
+      </div>
+    </div>
+    <!-- Item 2 -->
+    <div
+      class="flex items-start gap-4 p-4 rounded-xl border border-white/5 bg-[#1e293b]/30"
+    >
+      <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400 mt-1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          ><rect x="2" y="4" width="20" height="16" rx="2"></rect><line
+            x1="12"
+            x2="12"
+            y1="11"
+            y2="17"></line><line x1="12" x2="12" y1="7" y2="7.01"></line></svg
+        >
+      </div>
+      <div>
+        <h4 class="font-bold text-white text-sm">RUC</h4>
+        <p class="text-xs text-slate-400">
+          Registro Único de Contribuyentes para SUNAT.
+        </p>
+      </div>
+    </div>
+    <!-- Item 3 -->
+    <div
+      class="flex items-start gap-4 p-4 rounded-xl border border-white/5 bg-[#1e293b]/30"
+    >
+      <div class="p-2 rounded-lg bg-purple-500/10 text-purple-400 mt-1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          ><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
+          ></path><circle cx="12" cy="10" r="3"></circle></svg
+        >
+      </div>
+      <div>
+        <h4 class="font-bold text-white text-sm">Dirección Fiscal</h4>
+        <p class="text-xs text-slate-400">
+          Ubicación registrada ante la entidad tributaria.
+        </p>
+      </div>
+    </div>
+    <!-- Item 4 -->
+    <div
+      class="flex items-start gap-4 p-4 rounded-xl border border-white/5 bg-[#1e293b]/30"
+    >
+      <div class="p-2 rounded-lg bg-pink-500/10 text-pink-400 mt-1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          ><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle
+            cx="9"
+            cy="9"
+            r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"
+          ></path></svg
+        >
+      </div>
+      <div>
+        <h4 class="font-bold text-white text-sm">Logo Corporativo</h4>
+        <p class="text-xs text-slate-400">
+          Formato PNG/JPG para tickets y sistema.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <h2>
+    Series de Facturación <span
+      class="bg-blue-500/10 text-blue-400 text-xs px-2 py-1 rounded-full border border-blue-500/20 align-middle ml-2 font-mono"
+      >SUNAT</span
+    >
+  </h2>
+
+  <p>
+    El sistema requiere configurar las series para la emisión de comprobantes
+    electrónicos.
+  </p>
+
+  <div class="grid sm:grid-cols-3 gap-6 not-prose my-8">
+    <!-- Invoice Type F -->
+    <div
+      class="bg-[#1e293b] rounded-xl border border-white/5 overflow-hidden group hover:border-blue-500/30 transition-all"
+    >
+      <div
+        class="bg-blue-600/20 p-3 flex justify-center border-b border-white/5 group-hover:bg-blue-600/30 transition-colors"
+      >
+        <div
+          class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded shadow-lg uppercase tracking-wider"
+        >
+          Factura
+        </div>
+      </div>
+      <div class="p-6 text-center">
+        <div
+          class="text-3xl font-mono text-white mb-1 group-hover:text-blue-400 transition-colors"
+        >
+          F001
+        </div>
+        <div class="text-[10px] text-slate-500 uppercase tracking-widest">
+          Serie Default
+        </div>
+      </div>
+    </div>
+
+    <!-- Invoice Type B -->
+    <div
+      class="bg-[#1e293b] rounded-xl border border-white/5 overflow-hidden group hover:border-emerald-500/30 transition-all"
+    >
+      <div
+        class="bg-emerald-600/20 p-3 flex justify-center border-b border-white/5 group-hover:bg-emerald-600/30 transition-colors"
+      >
+        <div
+          class="px-3 py-1 bg-emerald-500 text-white text-xs font-bold rounded shadow-lg uppercase tracking-wider"
+        >
+          Boleta
+        </div>
+      </div>
+      <div class="p-6 text-center">
+        <div
+          class="text-3xl font-mono text-white mb-1 group-hover:text-emerald-400 transition-colors"
+        >
+          B001
+        </div>
+        <div class="text-[10px] text-slate-500 uppercase tracking-widest">
+          Serie Default
+        </div>
+      </div>
+    </div>
+
+    <!-- Invoice Type T -->
+    <div
+      class="bg-[#1e293b] rounded-xl border border-white/5 overflow-hidden group hover:border-amber-500/30 transition-all"
+    >
+      <div
+        class="bg-amber-600/20 p-3 flex justify-center border-b border-white/5 group-hover:bg-amber-600/30 transition-colors"
+      >
+        <div
+          class="px-3 py-1 bg-amber-500 text-white text-xs font-bold rounded shadow-lg uppercase tracking-wider"
+        >
+          Ticket
+        </div>
+      </div>
+      <div class="p-6 text-center">
+        <div
+          class="text-3xl font-mono text-white mb-1 group-hover:text-amber-400 transition-colors"
+        >
+          T001
+        </div>
+        <div class="text-[10px] text-slate-500 uppercase tracking-widest">
+          Uso Interno
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <Callout type="note" title="Multi-serie">
+    Si tienes múltiples cajas o sucursales, puedes crear nuevas series (e.g. <code
+      >B002</code
+    >, <code>F002</code>) desde el panel de administración.
+  </Callout>
+</DocsLayout>

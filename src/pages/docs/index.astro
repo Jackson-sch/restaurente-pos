@@ -1,0 +1,268 @@
+---
+import DocsLayout from "../../layouts/DocsLayout.astro";
+import Callout from "../../components/docs/Callout.astro";
+---
+
+<DocsLayout title="Introducción - Documentación">
+  <div class="mb-12">
+    <h1 class="mb-6">Introducción</h1>
+    <p class="text-xl text-slate-300 leading-relaxed max-w-3xl">
+      <span
+        class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600"
+        >RestaurantePOS</span
+      > es una solución integral diseñada para modernizar la gestión gastronómica
+      en Perú. Combina potencia, simplicidad y cumplimiento normativo en una sola
+      plataforma.
+    </p>
+
+    <!-- Tech Stack Badges -->
+    <div class="flex flex-wrap gap-3 mt-8 not-prose">
+      <div
+        class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-slate-400"
+      >
+        <div class="w-2 h-2 rounded-full bg-white"></div> Next.js 16
+      </div>
+      <div
+        class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-slate-400"
+      >
+        <div class="w-2 h-2 rounded-full bg-cyan-400"></div> Tailwind 4
+      </div>
+      <div
+        class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-slate-400"
+      >
+        <div class="w-2 h-2 rounded-full bg-emerald-400"></div> Prisma
+      </div>
+      <div
+        class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-slate-400"
+      >
+        <div class="w-2 h-2 rounded-full bg-amber-200"></div> Bun
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-12 not-prose">
+    <a
+      href="/docs/instalacion"
+      class="group relative p-8 bg-[#1e293b]/30 border border-white/5 rounded-3xl hover:border-primary-500/50 transition-all duration-300 hover:bg-[#1e293b]/50 hover:shadow-2xl hover:shadow-primary-500/10 hover:-translate-y-1 overflow-hidden"
+    >
+      <div
+        class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity duration-500 transform group-hover:scale-110"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-32 h-32 text-primary-500"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          ><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg
+        >
+      </div>
+      <div class="relative z-10">
+        <div
+          class="w-12 h-12 mb-6 rounded-2xl bg-primary-500/10 flex items-center justify-center border border-primary-500/20 group-hover:border-primary-500/50 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-primary-400"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            ><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+            ></path><polyline points="7 10 12 15 17 10"></polyline><line
+              x1="12"
+              x2="12"
+              y1="15"
+              y2="3"></line></svg
+          >
+        </div>
+        <h3
+          class="text-xl font-bold text-white mb-2 group-hover:text-primary-400 transition-colors"
+        >
+          Instalar Ahora
+        </h3>
+        <p class="text-sm text-slate-400 leading-relaxed max-w-[80%]">
+          Despliega el sistema en menos de 5 minutos en tu servidor local o
+          nube.
+        </p>
+      </div>
+    </a>
+
+    <a
+      href="/docs/modulos"
+      class="group relative p-8 bg-[#1e293b]/30 border border-white/5 rounded-3xl hover:border-blue-500/50 transition-all duration-300 hover:bg-[#1e293b]/50 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 overflow-hidden"
+    >
+      <div
+        class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity duration-500 transform group-hover:scale-110"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-32 h-32 text-blue-500"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          ><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect
+            width="7"
+            height="7"
+            x="14"
+            y="3"
+            rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"
+          ></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg
+        >
+      </div>
+      <div class="relative z-10">
+        <div
+          class="w-12 h-12 mb-6 rounded-2xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20 group-hover:border-blue-500/50 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-blue-400"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            ><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line
+              x1="8"
+              x2="16"
+              y1="21"
+              y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg
+          >
+        </div>
+        <h3
+          class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors"
+        >
+          Explorar Módulos
+        </h3>
+        <p class="text-sm text-slate-400 leading-relaxed max-w-[80%]">
+          Descubre todas las funcionalidades que ofrecemos para tu negocio.
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <h2>¿Por qué RestaurantePOS?</h2>
+
+  <p>
+    A diferencia de otros sistemas, nos enfocamos en la velocidad operativa y la
+    estabilidad offline. Sabemos que en hora punta no puedes permitirte fallos.
+  </p>
+
+  <Callout type="tip" title="Arquitectura Moderna">
+    Gracias a <strong>Next.js 16</strong> y <strong>Rust</strong> (vía Prisma/Bun),
+    el sistema es extremadamente rápido y eficiente en recursos.
+  </Callout>
+
+  <h2 class="mb-8">Características Principales</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose mb-12">
+    <!-- Feature 1 -->
+    <div
+      class="p-5 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/[0.07] transition-colors"
+    >
+      <div class="flex items-center gap-3 mb-3">
+        <div class="p-2 rounded-lg bg-orange-500/10 text-orange-400">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            ><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg
+          >
+        </div>
+        <h4 class="font-bold text-white text-sm">Gestión de Pedidos</h4>
+      </div>
+      <p class="text-xs text-slate-400 leading-relaxed">
+        Flujo optimizado para reducir clics en toma de orden.
+      </p>
+    </div>
+
+    <!-- Feature 2 -->
+    <div
+      class="p-5 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/[0.07] transition-colors"
+    >
+      <div class="flex items-center gap-3 mb-3">
+        <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            ><path d="M12 20h9"></path><path
+              d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"
+            ></path></svg
+          >
+        </div>
+        <h4 class="font-bold text-white text-sm">Cocina Real-Time</h4>
+      </div>
+      <p class="text-xs text-slate-400 leading-relaxed">
+        KDS con cero latencia para comandas instantáneas.
+      </p>
+    </div>
+
+    <!-- Feature 3 -->
+    <div
+      class="p-5 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/[0.07] transition-colors"
+    >
+      <div class="flex items-center gap-3 mb-3">
+        <div class="p-2 rounded-lg bg-purple-500/10 text-purple-400">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            ><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path
+              d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line
+              x1="17.5"
+              x2="17.51"
+              y1="6.5"
+              y2="6.5"></line></svg
+          >
+        </div>
+        <h4 class="font-bold text-white text-sm">Offline First</h4>
+      </div>
+      <p class="text-xs text-slate-400 leading-relaxed">
+        Sincronización automática cuando vuelve internet.
+      </p>
+    </div>
+
+    <!-- Feature 4 -->
+    <div
+      class="p-5 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/[0.07] transition-colors"
+    >
+      <div class="flex items-center gap-3 mb-3">
+        <div class="p-2 rounded-lg bg-red-500/10 text-red-400">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            ><path
+              d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+            ></path><polyline points="14 2 14 8 20 8"></polyline><path
+              d="M16 13H8"></path><path d="M16 17H8"></path><path d="M10 9H8"
+            ></path></svg
+          >
+        </div>
+        <h4 class="font-bold text-white text-sm">Facturación SUNAT</h4>
+      </div>
+      <p class="text-xs text-slate-400 leading-relaxed">
+        Envío directo a SUNAT/OSE con validación.
+      </p>
+    </div>
+  </div>
+
+  <Callout type="warning" title="Uso Comercial">
+    Este software es propietario. Asegúrate de tener una licencia activa antes
+    de usarlo en producción.
+  </Callout>
+</DocsLayout>

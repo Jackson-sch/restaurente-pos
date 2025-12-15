@@ -1,9 +1,10 @@
 ---
 const navLinks = [
-  { href: '#features', label: 'Características' },
-  { href: '#beneficios', label: 'Beneficios' },
-  { href: '#precios', label: 'Precios' },
-  { href: '#contacto', label: 'Contacto' },
+  { href: "#features", label: "Características" },
+  { href: "#beneficios", label: "Beneficios" },
+  { href: "#precios", label: "Precios" },
+  { href: "/docs", label: "Documentación" },
+  { href: "#contacto", label: "Contacto" },
 ];
 ---
 
@@ -12,35 +13,53 @@ const navLinks = [
     <div class="flex items-center justify-between h-20">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 11v3a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-3"/>
-            <path d="M12 19H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-3.83"/>
-            <path d="m3 11 7.77-6.04a2 2 0 0 1 2.46 0L21 11H3Z"/>
-            <path d="M12.97 19.77 7 15h12.5l-3.75 4.5a2 2 0 0 1-2.78.27Z"/>
+        <div
+          class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-white"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M3 11v3a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-3"></path>
+            <path
+              d="M12 19H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-3.83"
+            ></path>
+            <path d="m3 11 7.77-6.04a2 2 0 0 1 2.46 0L21 11H3Z"></path>
+            <path d="M12.97 19.77 7 15h12.5l-3.75 4.5a2 2 0 0 1-2.78.27Z"
+            ></path>
           </svg>
         </div>
         <span class="text-xl font-bold tracking-tight">
-          <span class="text-white">Restaurante</span><span class="text-primary-500">POS</span>
+          <span class="text-white">Restaurante</span><span
+            class="text-primary-500">POS</span
+          >
         </span>
       </a>
 
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center gap-8">
-        {navLinks.map(link => (
-          <a 
-            href={link.href}
-            class="text-sm font-medium text-slate-300 hover:text-white transition-colors relative group"
-          >
-            {link.label}
-            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300"></span>
-          </a>
-        ))}
+        {
+          navLinks.map((link) => (
+            <a
+              href={link.href}
+              class="text-sm font-medium text-slate-300 hover:text-white transition-colors relative group"
+            >
+              {link.label}
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300" />
+            </a>
+          ))
+        }
       </div>
 
       <!-- CTA Button -->
       <div class="hidden md:flex items-center gap-4">
-        <a 
+        <a
           href="https://wa.me/51934835062?text=Hola%2C%20quiero%20una%20demo%20del%20sistema%20RestaurantePOS"
           target="_blank"
           rel="noopener noreferrer"
@@ -51,15 +70,24 @@ const navLinks = [
       </div>
 
       <!-- Mobile Menu Button -->
-      <button 
+      <button
         id="mobile-menu-btn"
         class="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
         aria-label="Abrir menú"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="4" x2="20" y1="12" y2="12"/>
-          <line x1="4" x2="20" y1="6" y2="6"/>
-          <line x1="4" x2="20" y1="18" y2="18"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
         </svg>
       </button>
     </div>
@@ -67,15 +95,17 @@ const navLinks = [
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden pb-6">
       <div class="flex flex-col gap-4 pt-4 border-t border-white/10">
-        {navLinks.map(link => (
-          <a 
-            href={link.href}
-            class="text-base font-medium text-slate-300 hover:text-white transition-colors py-2"
-          >
-            {link.label}
-          </a>
-        ))}
-        <a 
+        {
+          navLinks.map((link) => (
+            <a
+              href={link.href}
+              class="text-base font-medium text-slate-300 hover:text-white transition-colors py-2"
+            >
+              {link.label}
+            </a>
+          ))
+        }
+        <a
           href="https://wa.me/57934835062?text=Hola%2C%20quiero%20una%20demo%20del%20sistema%20RestaurantePOS"
           target="_blank"
           rel="noopener noreferrer"
@@ -89,17 +119,17 @@ const navLinks = [
 </header>
 
 <script>
-  const menuBtn = document.getElementById('mobile-menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  
-  menuBtn?.addEventListener('click', () => {
-    mobileMenu?.classList.toggle('hidden');
+  const menuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("hidden");
   });
 
   // Close menu on link click
-  mobileMenu?.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu?.classList.add('hidden');
+  mobileMenu?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu?.classList.add("hidden");
     });
   });
 </script>
